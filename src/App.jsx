@@ -2,7 +2,7 @@ import viteLogo from '/prada.jpg'
 
 import React, { useState, useMemo } from 'react';
 
-import Tablas from './Tablas';
+import Tablas from './tablas';
 
 
 import './App.css'
