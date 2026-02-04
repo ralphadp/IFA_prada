@@ -220,7 +220,7 @@ function Tablas() {
 
 	return (
 		<DataTable
-		        title="Horarios - gestion 2026"
+		        title="Horarios - Gestión 2026"
 			    columns={columns}
 			    data={filteredHorario}
 		        conditionalRowStyles={rowStyle}
