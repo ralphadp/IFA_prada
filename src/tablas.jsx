@@ -62,12 +62,42 @@ const rowStyle = [
 	}, {
 		when:  row => row.curso == '1B - Tarde',
 		style: {
-				backgroundColor: '#d7dbf6'
+			backgroundColor: '#d7dbf6'
 		}
     }, {
         when:  row => row.curso == '1C - Tarde',
 		style: {
-				backgroundColor: '#f5ffee'
+			backgroundColor: '#f5ffee'
+		}
+	}, {
+		when: row => row.curso == '2A - Tarde',
+		style: {
+			backgroundColor: '#eedbf6'
+		}
+	}, {
+		when:  row => row.curso == '2B - Tarde',
+		style: {
+			backgroundColor: '#d7dbf6'
+		}
+    }, {
+        when:  row => row.curso == '2C - Tarde',
+		style: {
+			backgroundColor: '#f5ffee'
+		}
+	}, {
+		when: row => row.curso == '3A - Tarde',
+		style: {
+			backgroundColor: '#eedbf6'
+		}
+	}, {
+		when:  row => row.curso == '3B - Tarde',
+		style: {
+			backgroundColor: '#d7dbf6'
+		}
+    }, {
+        when:  row => row.curso == '3C - Tarde',
+		style: {
+			backgroundColor: '#f5ffee'
 		}
 	}
 
