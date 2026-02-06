@@ -107,16 +107,19 @@ const customStyles = {
 	headRow: {
 		style: {
 		    textAlign: 'center',
+			justifyContent: 'center'
 		}
 	},
 	headCells: {
-    		style: {
-                   textAlign: 'center',
+    	style: {
+            textAlign: 'center',
+			justifyContent: 'center'
 		}
 	},
 	cells: {
 		style: {
-			width: '150px',
+			justifyContent: 'center',
+			width: '160px',
 		}
 	}
 };
