@@ -515,24 +515,27 @@ export const horario = [
 		jueves: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
 		viernes: {materia: 'Historia del arte III', profesor: 'TS Jenny Camacho', aula: 'Aula 5'}
 	},
+	
+	
+	
 	{
 		id: 50,
 		curso: '3B - Tarde',
 		hora: '14:00 - 14:40',
-		lunes: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
-		martes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
-		miercoles: {materia: 'Critica del arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 6'},
-		jueves: {materia: 'Taller de Grado', profesor: 'Lic Jorge Saavedra', aula: 'Historia del Arte'},
+		lunes: {materia: 'Introduccion y Marketing de arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 5'},
+		martes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
+		miercoles: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
+		jueves: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
 		viernes: {materia: 'Historia del arte III', profesor: 'TS Jenny Camacho', aula: 'Aula 3'}
 	},
 	{
 		id: 51,
 		curso: '3B - Tarde',
 		hora: '14:40 - 15:20',
-		lunes: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
-		martes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
-		miercoles: {materia: 'Critica del arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 6'},
-		jueves: {materia: 'Taller de Grado', profesor: 'Lic Jorge Saavedra', aula: 'Historia del Arte'},
+		lunes: {materia: 'Introduccion y Marketing de arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 5'},
+		martes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
+		miercoles: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
+		jueves: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
 		viernes: {materia: 'Historia del arte III', profesor: 'TS Jenny Camacho', aula: 'Aula 3'}
 	},
 	{
@@ -540,10 +543,10 @@ export const horario = [
 		curso: '3B - Tarde',
 		hora: '15:20 - 16:00',
 		lunes: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
-		martes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
+		martes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
 		miercoles: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
 		jueves: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
-		viernes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'}
+		viernes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'}
 	},
 	{
 		id: 53,
@@ -560,61 +563,60 @@ export const horario = [
 		curso: '3B - Tarde',
 		hora: '16:15 - 16:55',
 		lunes: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
-		martes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
+		martes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
 		miercoles: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
 		jueves: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
-		viernes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'}
+		viernes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'}
 	},
 	{
 		id: 55,
 		curso: '3B - Tarde',
 		hora: '16:55 - 17:35',
-		lunes: {materia: 'Introduccion y Marketing de arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 5'},
+		lunes: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
 		martes: {materia: 'Filosofia del arte', profesor: 'TS Tony Santander', aula: 'Aula de Historia'},
-		miercoles: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
-		jueves: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
-		viernes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'}
-
+		miercoles: {materia: 'Taller de Grado', profesor: 'Lic Jorge Saavedra', aula: 'Historia del Arte'},
+		jueves: {materia: 'Critica del arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 6'},
+		viernes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'}
 	},
 	{
 		id: 56,
 		curso: '3B - Tarde',
 		hora: '17:35 - 18:15',
-		lunes: {materia: 'Introduccion y Marketing de arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 5'},
+		lunes: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
 		martes: {materia: 'Filosofia del arte', profesor: 'TS Tony Santander', aula: 'Aula de Historia'},
-		miercoles: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
-		jueves: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
-		viernes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'}
+		miercoles: {materia: 'Taller de Grado', profesor: 'Lic Jorge Saavedra', aula: 'Historia del Arte'},
+		jueves: {materia: 'Critica del arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 6'},
+		viernes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'}
 	},
 	{
 		id: 57,
 		curso: '3C - Tarde',
 		hora: '14:00 - 14:40',
-		lunes: {materia:'Filosofia del arte', profesor: 'TS Tony Santander', aula: 'Aula 4'},
-		martes: {materia: 'Introduccion y Marketing de arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 4'},
-		miercoles: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 4'},
+		lunes: {materia:'Filosofia del arte', profesor: 'TS Samuel Maita', aula: 'Aula 5'},
+		martes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
+		miercoles: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
 		jueves: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
-		viernes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'}
+		viernes: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'}
 	},
 	{
 		id: 58,
 		curso: '3C - Tarde',
 		hora: '14:40 - 15:20',
-		lunes: {materia:'Filosofia del arte', profesor: 'TS Tony Santander', aula: 'Aula 4'},
-		martes: {materia: 'Introduccion y Marketing de arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 4'},
-		miercoles: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 4'},
+		lunes: {materia:'Filosofia del arte', profesor: 'TS Samuel Maita', aula: 'Aula 5'},
+		martes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
+		miercoles: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
 		jueves: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
-		viernes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'}
+		viernes: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'}
 	},
 	{
 		id: 59,
 		curso: '3C - Tarde',
 		hora: '15:20 - 16:00',
-		lunes: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
-		martes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
-		miercoles: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 4'},
+		lunes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
+		martes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
+		miercoles: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
 		jueves: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
-		viernes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'}
+		viernes: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'}
 	},
 	{
 		id: 60,
@@ -630,36 +632,32 @@ export const horario = [
 		id: 61,
 		curso: '3C - Tarde',
 		hora: '16:15 - 16:55',
-		lunes: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
-		martes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
-		miercoles: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 4'},
+		lunes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
+		martes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'},
+		miercoles: {materia: 'Graficas III', profesor: 'TS Silvia Salazar', aula: 'Aula 5'},
 		jueves: {materia: 'Escultura III', profesor: 'TS Hugo Andia', aula: 'Taller de Escultura I'},
-		viernes: {materia: 'Ceramica III', profesor: 'TS Tony Santander', aula: 'Taller de Ceramica'}
+		viernes: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'}
 	},
 	{
 		id: 62,
 		curso: '3C - Tarde',
 		hora: '16:55 - 17:35',
-		lunes: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
-		martes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
-		miercoles: {materia: 'Critica del arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 5'},
-		jueves: {materia: 'Historia del arte III', profesor: 'TS Jenny Camacho', aula: 'Aula 3'},
+		lunes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
+		martes: {materia: 'Introduccion y Marketing de arte', profesor: 'Lic Pablo Viracocha', aula: 'Historia del arte'},
+		miercoles: {materia: 'Critica del arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 6'},
+		jueves: {materia: 'Historia del arte III', profesor: 'TS Jenny Camacho', aula: 'Taller de pintura II'},
 		viernes: {materia: 'Taller de Grado', profesor: 'Lic Jorge Saavedra', aula: 'Aula 6'}
-
 	},
 	{
 		id: 63,
 		curso: '3C - Tarde',
 		hora: '17:35 - 18:15',
-		lunes: {materia: 'Pintura III', profesor: 'TS Remy Daza', aula: 'Taller de Pintura II'},
-		martes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
-		miercoles: {materia: 'Critica del arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 5'},
-		jueves: {materia: 'Historia del arte III', profesor: 'TS Jenny Camacho', aula: 'Aula 3'},
+		lunes: {materia: 'Dibujo III', profesor: 'TS Wilmer Uscamayta', aula: 'Taller de Dibujo II'},
+		martes: {materia: 'Introduccion y Marketing de arte', profesor: 'Lic Pablo Viracocha', aula: 'Historia del arte'},
+		miercoles: {materia: 'Critica del arte', profesor: 'Lic Pablo Viracocha', aula: 'Aula 6'},
+		jueves: {materia: 'Historia del arte III', profesor: 'TS Jenny Camacho', aula: 'Taller de pintura II'},
 		viernes: {materia: 'Taller de Grado', profesor: 'Lic Jorge Saavedra', aula: 'Aula 6'}
 	},
-	
-	
-	
 	
 	
 	{
