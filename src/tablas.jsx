@@ -8,6 +8,35 @@ import { horario } from './horario';
 import ExportPDF from './exportToPdf';
 
 
+const CheckField = styled.input`
+	height: 32px;
+	width: 32px;
+	border-radius: 3px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border: 1px solid #e5e5e5;
+	padding: 0 32px 0 16px;
+	display: block;
+	padding-left: 200px;
+`;
+
+const CheckLabelField = styled.label`
+	height: 32px;
+	width: 100px;
+	border-radius: 3px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border: 1px solid #e5e5e5;
+	color: #0e000e;
+	padding: 0 32px 0 16px;
+	display: block;
+	float: left;
+`;
+
 const SelectField = styled.select`
 	height: 32px;
 	width: 200px;
@@ -140,6 +169,26 @@ const rowStyle = [
 		style: {
 			backgroundColor: '#f5ffee'
 		}
+	}, {
+		when: row => row.curso == '1A - Noche',
+		style: {
+			backgroundColor: '#eedbf6'
+		}
+	}, {
+		when:  row => row.curso == '1B - Noche',
+		style: {
+			backgroundColor: '#d7dbf6'
+		}
+    }, {
+		when: row => row.curso == '2A - Noche',
+		style: {
+			backgroundColor: '#eedbf6'
+		}
+	}, {
+		when: row => row.curso == '3A - Noche',
+		style: {
+			backgroundColor: '#f5ffee'
+		}
 	}
 
 ];
@@ -166,7 +215,102 @@ const customStyles = {
 };
 
 
-const columns = [
+
+
+
+
+function Tablas() {
+	const [filterText, setFilterText] = React.useState('');
+	const [scheduleView, setScheduleView] = React.useState(false);
+	const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);
+	
+	const CellStyle = (dia) => {
+		if (scheduleView) {
+			return [];
+		}
+		return [
+		  {
+			when: row => row[dia].materia.includes('Escultura'),
+			style: {
+			  backgroundColor: 'rgba(63, 195, 128, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Dibujo'),
+			style: {
+			  backgroundColor: 'rgba(248, 148, 6, 0.6)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Ceramica'),
+			style: {
+			  backgroundColor: 'rgba(232, 76, 76, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Pintura'),
+			style: {
+			  backgroundColor: 'rgba(200, 96, 176, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Graficas'),
+			style: {
+			  backgroundColor: 'rgba(55, 98, 190, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Composicion'),
+			style: {
+			  backgroundColor: 'rgba(55, 20, 55, 0.2)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Anatomia Artistica'),
+			style: {
+			  backgroundColor: 'rgba(255, 41, 100, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Historia del arte'),
+			style: {
+			  backgroundColor: 'rgba(55, 100, 255, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Geometria'),
+			style: {
+			  backgroundColor: 'rgba(255, 220, 49, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Introduccion y Marketing de arte'),
+			style: {
+			  backgroundColor: 'rgba(25, 24, 120, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Filosofia del arte'),
+			style: {
+			  backgroundColor: 'rgba(100, 24, 50, 0.7)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Taller de Grado'),
+			style: {
+			  backgroundColor: 'rgba(180, 180, 20, 0.9)'
+			},
+		  },
+		  {
+			when: row => row[dia].materia.includes('Critica del arte'),
+			style: {
+			  backgroundColor: 'rgba(14, 150, 180, 0.9)'
+			},
+		  }
+		];
+	}
+	
+	const columns = [
         {
                 name: 'Hora',
                 selector: row => row.hora,
@@ -184,10 +328,11 @@ const columns = [
 		        cell: (row) => ( 
                          <div>
                              <div style={{ fontWeight: 'bold' }}>{row.lunes.materia}</div>
-                             <div style={{ color: 'green' }}>{row.lunes.profesor}</div>
+                             <div style={{ color: 'darkgreen' }}>{row.lunes.profesor}</div>
 	            		     <div>{row.lunes.aula}</div>
                          </div>
-                       )
+                       ),
+				conditionalCellStyles: CellStyle('lunes')
 	    },
 	    {
 		        name: 'Martes',
@@ -196,11 +341,11 @@ const columns = [
 		        cell: (row) => (
                          <div>
                              <div style={{ fontWeight: 'bold' }}>{row.martes.materia}</div>
-                             <div style={{ color: 'green' }}>{row.martes.profesor}</div>
+                             <div style={{ color: 'darkgreen' }}>{row.martes.profesor}</div>
                              <div>{row.martes.aula}</div>
                          </div>
-                       )
-
+                       ),
+				conditionalCellStyles: CellStyle('martes')
 	    },
 	    {
                 name: 'Miercoles',
@@ -209,10 +354,11 @@ const columns = [
 		        cell: (row) => (
                          <div>
                              <div style={{ fontWeight: 'bold' }}>{row.miercoles.materia}</div>
-                             <div style={{ color: 'green' }}>{row.miercoles.profesor}</div>
+                             <div style={{ color: 'darkgreen' }}>{row.miercoles.profesor}</div>
                              <div>{row.miercoles.aula}</div>
                          </div>
-                       )
+                       ),
+				conditionalCellStyles: CellStyle('miercoles')
         },
         {
 		        name: 'Jueves',
@@ -221,11 +367,11 @@ const columns = [
 		        cell: (row) => (
                          <div>
                              <div style={{ fontWeight: 'bold' }}>{row.jueves.materia}</div>
-                             <div style={{ color: 'green' }}>{row.jueves.profesor}</div>
+                             <div style={{ color: 'darkgreen' }}>{row.jueves.profesor}</div>
                              <div>{row.jueves.aula}</div>
                          </div>
-                       )
-
+                       ),
+				conditionalCellStyles: CellStyle('jueves')
         },
 	    {
                 name: 'Viernes',
@@ -234,17 +380,13 @@ const columns = [
                 cell: (row) => (
                          <div>
                              <div style={{ fontWeight: 'bold' }}>{row.viernes.materia}</div>
-                             <div style={{ color: 'green' }}>{row.viernes.profesor}</div>
+                             <div style={{ color: 'darkgreen' }}>{row.viernes.profesor}</div>
                              <div>{row.viernes.aula}</div>
                          </div>
-                       )
-
+                       ),
+				conditionalCellStyles: CellStyle('viernes')
         }
-];
-
-function Tablas() {
-	const [filterText, setFilterText] = React.useState('');
-	const [resetPaginationToggle, setResetPaginationToggle] = React.useState(false);
+	];
 
 	const filteredHorario = horario.filter(
 		item => (
@@ -291,33 +433,37 @@ function Tablas() {
 		};
 
 		return (
-			<FilterComponent onFilter={e => setFilterText(e.target.value)} onClear={handleClear} filterText={filterText} onSelect={e => setFilterText(e.target.value)} />
+			<FilterComponent onFilter={e => setFilterText(e.target.value)} onClear={handleClear} filterText={filterText} 
+			onSelect={e => setFilterText(e.target.value)}
+			/>
 		);
 	}, [filterText, resetPaginationToggle]);
 	
 	const performTitle = () => {
 		if (filterText) {
-			return 'IFA Raul G. Prada - Horario 2026 - ' + filterText;
+			return 'IFA Raul G. Prada - Horario 2026 ( ' + filterText + ')';
 		}
 		
 		return 'IFA Raul G. Prada - Horario 2026'; 
-			
 	}
 
 	return (
 		<div>
-		<button className="export" onClick={() => ExportPDF(columns, filteredHorario, performTitle())}>
-			Exportar a PDF
-		</button>
-		<DataTable
-		        title="Horarios - Gestión 2026"
-			    columns={columns}
-			    data={filteredHorario}
-		        conditionalRowStyles={rowStyle}
-			    customStyles={customStyles}
-				subHeader
-			    subHeaderComponent={subHeaderComponentMemo}
-		/>
+			<button className="export" onClick={() => ExportPDF(columns, filteredHorario, performTitle(), scheduleView)}>
+				Exportar a PDF
+			</button>
+			<label htmlFor="activateView" id="labelView">
+			<input id="activateView" type="checkbox" checked={scheduleView} onChange={(e) => setScheduleView(e.target.checked)}/>
+			Vista Clasica</label>
+			<DataTable
+					title="Horarios - Gestión 2026"
+					columns={columns}
+					data={filteredHorario}
+					conditionalRowStyles={rowStyle}
+					customStyles={customStyles}
+					subHeader
+					subHeaderComponent={subHeaderComponentMemo}
+			/>
 		</div>
 	);
 };

@@ -7,3 +7,7 @@ button.export:hover {
 	border-color: white!important;
 }
 
+#labelView {
+	float:left;
+}
+
