@@ -5,6 +5,7 @@ import React, { useState, useMemo } from 'react';
 import Tablas from './tablas';
 import Footer from './footer';
 
+const facebookSite = "https://www.facebook.com/IFA.R.G.P/";
 
 import './App.css'
 
@@ -14,13 +15,13 @@ function App() {
    return (
     <>
       <div>
-        <a href="https://www.facebook.com/IFA.R.G.P/" target="_blank">
+        <a href={facebookSite} target="_blank">
           <img src={viteLogo} className="logo" alt="prada logo" />
         </a>
       </div>
       <div>
-        <a href="https://www.facebook.com/IFA.R.G.P/" target="_blank" className="title"> Escuela Superior de Artes</a><br/>
-	      <a href="https://www.facebook.com/IFA.R.G.P/" target="_blank" className="title"> RAUL G. PRADA</a> <br/>
+        <a href={facebookSite} target="_blank" className="title"> Escuela Superior de Artes</a><br/>
+	      <a href={facebookSite} target="_blank" className="title"> RAUL G. PRADA</a> <br/>
       </div>
       <br/>
 
